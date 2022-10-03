@@ -10,7 +10,7 @@
 1. 该 数 据 中 ， large_twitch_features.csv 中 每一行为一个节点的相关属性，large_twitch_edges.csv 中第一行为一条边。具体详细信息请阅读 README.txt。
 
 2. 建立包 GraphStat，实现网络的构建、分析与可视化。其中
- 1. 包 Graph，用以实现点和图结构的创建，以及相关的基础统计功能
+ - 包 Graph，用以实现点和图结构的创建，以及相关的基础统计功能
   1. 实现 node.py 模块
    1. 实现函数 init_node()，从数据文件中加载所有节点及其属性；
    2. 实现函数 print_node()，利用 format 函数或 f-string，输出某节点的属性
@@ -18,7 +18,7 @@
   3. 实现 stat.py 模块，进行基础的统计分析
    1. 计算网络的节点数、边数、平均度等并返回
    2. 统计某个节点属性的分布
- 2. 包 Visualization， 基于上述构建的图和节点结构，利用 pyecharts 或 matplotlib 绘制相关的统计结果
+ - 包 Visualization， 基于上述构建的图和节点结构，利用 pyecharts 或 matplotlib 绘制相关的统计结果
   1. 实现 plotgraph.py 模块，绘制网络的局部结构（如某个节点及其所有邻居所组成的 ego 网络）
   2. 实现 plotnodes.py 模块，绘制节点的属性分布，并提供结果的输出或文件保存（图片）
 
